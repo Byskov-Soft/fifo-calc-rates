@@ -42,12 +42,11 @@ Options:
 Example: fifo-calc-rates ecb-eur --year 2024 --input ./test-data/usd-eur.xml --output ./usd-eur-rates-2024.json
 ```
 
-**Note:** Currently `USD-EUR` is the only supported currency pair. More may be added in the future,
-but it is not certain, as historic data like this is not always available for free. `ecb-eur` refers
-to the [downloadable XML file](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/usd.xml)
-provided by the European Central Bank.
+**Note:** `ecb-eur` refers to a [downloadable XML file](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/usd.xml)
+provided by the European Central Bank. The file is updated daily with latest USD to EUR rate. Currently `USD-EUR` is the only currency pair supported by `fifo-calc-rates`.
+More may be added in the future, but it is not certain, as historic data like this is not always available for free. 
 
-The output file should contain JSON having the following structure:
+After running the tool, the output file should contain JSON having the following structure:
 
 ```json
 {
@@ -64,5 +63,6 @@ The output file should contain JSON having the following structure:
   "2024-01-11": 1.0987,
   "2024-01-12": 1.0942,
   "2024-01-13": 1.0942,
-  etc
+  "etc": 
+}
 ```
