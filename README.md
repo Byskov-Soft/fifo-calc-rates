@@ -1,6 +1,6 @@
 # Fifo-calc-rates
 
-A simple commandline tool that creates a JSON file containing currencey rates for every day in a
+A simple commandline tool for creating JSON files containing currencey rates for every day in a
 year (or until the current day in the current year).
 
 This tool is part of the `fifo-calc` crypto suite, which consists of the following tools.
@@ -62,5 +62,5 @@ The output file should contain JSON having the following structure:
   "2024-01-11": 1.0987,
   "2024-01-12": 1.0942,
   "2024-01-13": 1.0942,
-  ....
+  etc
 ```
