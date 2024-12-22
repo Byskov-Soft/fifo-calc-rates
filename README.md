@@ -30,7 +30,7 @@ supports using a fixed conversion rate of `1`.
 ## Usage
 
 ```
-fifo-calc-convert ECB_EUR <options>
+fifo-calc-convert ecb-eur <options>
 
 Options:
  --year   <year>             : Year for which the rates are being created
