@@ -1,7 +1,7 @@
 # Fifo-calc-rates
 
-A simple commandline tool for creating JSON files containing currencey rates for every day in a
-year (or until the current day in the current year).
+A simple commandline tool for creating JSON files containing currencey rates for every day in a year
+(or until the current day in the current year).
 
 This tool is part of the `fifo-calc` crypto suite, which consists of the following tools.
 
@@ -27,6 +27,26 @@ When the exchange and taxable currency is the same.
 If, for example, transactions and the taxable currency are both in USD, `fifo-calc-converter`
 supports using a fixed conversion rate of `1`.
 
+## Installation
+
+- Install the [Deno runtime](https://deno.com/)
+
+  If you are on Linux or Mac, using [DVM](https://deno.land/x/dvm@v1.9.1) (Deno version manager) is
+  recommended
+
+- Clone this [GitHub repository](https://github.com/Byskov-Soft/fifo-calc-rates.git):
+
+  `git clone https://github.com/Byskov-Soft/fifo-calc-rates.git`
+
+- Compile the binary:
+  ```
+  cd fifo-calc-rates
+  deno task compile
+  ```
+- Copy the compiled binary to a directory in your path
+
+  E.g. `sudo cp ./fifo-calc-rates /usr/local/bin/`
+
 ## Usage
 
 ```
@@ -42,9 +62,11 @@ Options:
 Example: fifo-calc-rates ecb-eur --year 2024 --input ./test-data/usd-eur.xml --output ./usd-eur-rates-2024.json
 ```
 
-**Note:** `ecb-eur` refers to a [downloadable XML file](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/usd.xml)
-provided by the European Central Bank. The file is updated daily with latest USD to EUR rate. Currently `USD-EUR` is the only currency pair supported by `fifo-calc-rates`.
-More may be added in the future, but it is not certain, as historic data like this is not always available for free. 
+**Note:** `ecb-eur` refers to a
+[downloadable XML file](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/usd.xml)
+provided by the European Central Bank. The file is updated daily with latest USD to EUR rate.
+Currently `USD-EUR` is the only currency pair supported by `fifo-calc-rates`. More may be added in
+the future, but it is not certain, as historic data like this is not always available for free.
 
 After running the tool, the output file should contain JSON having the following structure:
 
@@ -63,6 +85,6 @@ After running the tool, the output file should contain JSON having the following
   "2024-01-11": 1.0987,
   "2024-01-12": 1.0942,
   "2024-01-13": 1.0942,
-  "etc": 
+  "etc":
 }
 ```
