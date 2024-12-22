@@ -43,7 +43,9 @@ Example: fifo-calc-rates ecb-eur --year 2024 --input ./test-data/usd-eur.xml --o
 ```
 
 **Note:** Currently `USD-EUR` is the only supported currency pair. More may be added in the future,
-but it is not certain, as historic data like this is not always available for free.
+but it is not certain, as historic data like this is not always available for free. `ecb-eur` refers
+to the [downloadable XML file](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/usd.xml)
+provided by the European Central Bank.
 
 The output file should contain JSON having the following structure:
 
