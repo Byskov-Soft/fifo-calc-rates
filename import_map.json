@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@std/cli/parse-args": "jsr:@std/cli/parse-args",
+    "date-fns": "npm:date-fns@3.0.6",
+    "fast-xml-parser": "npm:fast-xml-parser@4.5.0",
+    "zod": "https://deno.land/x/zod@v3.23.8/mod.ts"
+  }
+}
