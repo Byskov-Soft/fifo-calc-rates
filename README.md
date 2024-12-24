@@ -3,7 +3,7 @@
 A simple commandline tool for creating JSON files containing currencey rates for every day in a year
 (or until the current day in the current year).
 
-This tool is part of the `fifo-calc` crypto suite, which consists of the following tools.
+`fifo-calc-rates` is part of the `fifo-calc` crypto suite, which consists of the following tools.
 
 | tool                  | description                                                                                                      |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------- |
