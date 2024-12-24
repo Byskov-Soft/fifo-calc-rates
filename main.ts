@@ -22,7 +22,7 @@ const ecbExample = [
 ].join('\n')
 
 export const usage: Usage = {
-  option: `${Object.keys(SOURCE).join(' | ')}`,
+  option: `${Object.values(SOURCE).join(' | ')}`,
   arguments: [
     '--year   <year>             : Year for which the rates are being created',
     '--input  <input-file-path>  : An input file matching the specified source',
