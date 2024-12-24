@@ -16,16 +16,18 @@ This tool is part of the `fifo-calc` crypto suite, which consists of the followi
 If you need to convert CSV files with `fifo-calc-converter` and your transactions are in a different
 currency than your taxable currency.
 
-**Example:** The CSV files you want to convert has values in USD but you need to report taxes in EUR.
+**Example:** The CSV files you want to convert has values in USD but you need to report taxes in
+EUR.
 
 In this case you need to provide the USD cost of one EUR of each transaction date.
 
 ## When would I NOT need this tool?
 
-When the exchange and taxable currency is the same.
+When the exchange and taxable currency is the same. For example, if transactions and the taxable
+currency are both in USD.
 
-If, for example, transactions and the taxable currency are both in USD, `fifo-calc-converter`
-supports using a fixed conversion rate of `1` (no conversion is done).
+As `fifo-calc-converter` supports a fixed conversion rate, you can simply use rate of `1` to not
+have any conversion done.
 
 ## Installation
 
