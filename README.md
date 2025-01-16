@@ -3,13 +3,15 @@
 A simple commandline tool for creating JSON files containing currencey rates for every day in a year
 (or until the current day in the current year).
 
+**NOTE:** Out-of-the-box only USD to EUR is supported.
+
 `fifo-calc-rates` is part of the `fifo-calc` crypto suite, which consists of the following tools.
 
 | tool                  | description                                                                                                      |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | `fifo-calc`           | Creates FIFO reports based on buy and sell transactions to be used for reporting capital gains.                  |
 | `fifo-calc-converter` | Converts transaction (CSV) files from various crypto exchanges, to a format that can be imported by `fifo-calc`. |
-| `fifo-calc-rates`     | Creates currency rate files to be used `fifo-calc-converter`.                                                    |
+| `fifo-calc-rates`     | Creates currency rate files to be used with `fifo-calc-converter`.                                               |
 
 ## When would I need this tool?
 
@@ -23,11 +25,16 @@ In this case you need to provide the USD cost of one EUR of each transaction dat
 
 ## When would I NOT need this tool?
 
-When the exchange and taxable currency is the same. For example, if transactions and the taxable
-currency are both in USD.
+1. When the exchange and taxable currency is the same. For example, if transactions and the taxable
+   currency are both in USD.
 
-As `fifo-calc-converter` supports a fixed conversion rate, you can simply use rate of `1` to not
-have any conversion done.
+   In this case you would use a fixed rate of `1` with `fifo-calc-converter`.
+
+1. If you need to convert to a taxable currency, but your tax authorities allow you to use a fixed
+   conversion rate for the full year (this may not be in your own interest).
+
+   In this case you would choose a fixed rate with `fifo-calc-converter`. Check with tax authorities
+   to know the exact rules. It is not necessarily correct to use lowest rate.
 
 ## Installation
 
@@ -87,6 +94,6 @@ After running the tool, the output file should contain JSON having the following
   "2024-01-11": 1.0987,
   "2024-01-12": 1.0942,
   "2024-01-13": 1.0942,
-  "etc":
+  ...
 }
 ```
