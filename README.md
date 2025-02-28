@@ -7,11 +7,11 @@ A simple commandline tool for creating JSON files containing currencey rates for
 
 `fifo-calc-rates` is part of the `fifo-calc` crypto suite, which consists of the following tools.
 
-| tool                  | description                                                                                                      |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `fifo-calc`           | Creates FIFO reports based on buy and sell transactions to be used for reporting capital gains.                  |
-| `fifo-calc-converter` | Converts transaction (CSV) files from various crypto exchanges, to a format that can be imported by `fifo-calc`. |
-| `fifo-calc-rates`     | Creates currency rate files to be used with `fifo-calc-converter`.                                               |
+| Tool                                                                      | Description                                                                                                      |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [fifo-calc](https://github.com/Byskov-Soft/fifo-calc)                     | Creates FIFO reports based on buy and sell transactions to be used for reporting capital gains.                  |
+| [fifo-calc-converter](https://github.com/Byskov-Soft/fifo-calc-converter) | Converts transaction (CSV) files from various crypto exchanges, to a format that can be imported by `fifo-calc`. |
+| [fifo-calc-rates](https://github.com/Byskov-Soft/fifo-calc-rates)         | Creates currency rate files to be used with `fifo-calc-converter`.                                               |
 
 ## When would I need this tool?
 
